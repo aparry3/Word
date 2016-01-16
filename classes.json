@@ -1,20 +1,4 @@
-'use strict'
-
-var app = angular.module('WordApp', [])
-.factory('teachers', [function() {
-	var o = [
-		{
-			name: 'Aaron'
-		},
-		{
-			name: 'Colin'
-		}
-	];
-	return o;
-}])
-.factory('classes', [function() {
-	var o = [
-		{
+{
 	name: "ACCT 2101",
 	description: "ACCOUNTING I",
 	teachers: [],
@@ -37880,31 +37864,3 @@ var app = angular.module('WordApp', [])
 	teachers: [],
 	id: 6310
 },
-
-	];
-	return o;
-}])
-.factory('documents', [function() {
-	var o = {
-		documents: []
-	};
-	return o;
-}])
-.factory('users', [function() {
-	var o = {
-		users: [
-
-
-		]
-	};
-	return o;
-}])
-.controller('WordCtrl', ['$scope', '$http', '$window', 'documents', 'teachers', 'classes', 'users', 
-	function($scope, $http, $window, documents, teachers, classes, users) {
-		$scope.documents = documents;
-		$scope.teachers = teachers;
-		console.log($scope.teachers);
-		$scope.classes = classes;
-		$scope.showClass = true;
-    	
-}]);
