@@ -1,4 +1,5 @@
 'use strict'
+
 angular.module('WordApp').controller('WordCtrl', ['$scope', '$http', '$window', 'documents', 'teachers', 'classes', 'users', 
 	function($scope, $http, $window, documents, teachers, classes, users) {
 		$scope.documents = documents;

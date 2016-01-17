@@ -21,7 +21,9 @@
     <h3>Classes</h3>
     <ul>
       <li ng-repeat="class in classes">
+        <a href="#/classes/{{$index}}">
         {{class.name}}
+        </a>
         <ul>
           <li>
             {{class.description}}
