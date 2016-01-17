@@ -1,0 +1,33 @@
+<div>
+  <ul>
+    <li>
+      Classes
+    </li>
+    <li class="nav active">
+      Teachers
+    </li>
+  </ul>
+</div>
+<div>
+  <div id="teachers">
+    <h3>Teachers</h3>
+    <ul>
+      <li ng-repeat="teacher in teachers">
+        {{teacher.name}}
+      </li>
+    </ul>
+  </div>
+  <div id-"classes">
+    <h3>Classes</h3>
+    <ul>
+      <li ng-repeat="class in classes">
+        {{class.name}}
+        <ul>
+          <li>
+            {{class.description}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

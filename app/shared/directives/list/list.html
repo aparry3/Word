@@ -1,3 +1,12 @@
 <div>
-	
+	<form class="ui-filterable">
+		<input id="filter" data-type="search">
+	</form>
+	<div>
+		<ul>
+			<li ng-repeat="item in listItems">
+				{{item.name}}
+			</li>
+		</ul>
+	</div>
 </div>
